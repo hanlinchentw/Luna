@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFC070952C89ACFF004B0323 /* LunaLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070942C89ACFF004B0323 /* LunaLinkApp.swift */; };
+		CFC070972C89ACFF004B0323 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070962C89ACFF004B0323 /* ContentView.swift */; };
+		CFC070992C89AD01004B0323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC070982C89AD01004B0323 /* Assets.xcassets */; };
+		CFC0709C2C89AD01004B0323 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC0709B2C89AD01004B0323 /* Preview Assets.xcassets */; };
+		CFC070A52C89ADE5004B0323 /* NIOSSH in Frameworks */ = {isa = PBXBuildFile; productRef = CFC070A42C89ADE5004B0323 /* NIOSSH */; };
+		CFC070AB2C8A9622004B0323 /* SSHClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070AA2C8A9622004B0323 /* SSHClient.swift */; };
+		CFC070AD2C8A963B004B0323 /* UserAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070AC2C8A963B004B0323 /* UserAuthenticator.swift */; };
+		CFC070AF2C8A9656004B0323 /* ServerAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070AE2C8A9656004B0323 /* ServerAuthenticator.swift */; };
+		CFC070B12C8A9672004B0323 /* SSHClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070B02C8A9672004B0323 /* SSHClientError.swift */; };
+		CFC070B32C8A9684004B0323 /* PasswordPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070B22C8A9684004B0323 /* PasswordPrompt.swift */; };
+		CFC070B52C8A968F004B0323 /* HostKeyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070B42C8A968F004B0323 /* HostKeyValidator.swift */; };
+		CFC070B72C8A9AE2004B0323 /* SSHClientWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070B62C8A9AE2004B0323 /* SSHClientWrapper.swift */; };
+		CFC070B92C8A9AF5004B0323 /* SSHConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070B82C8A9AF5004B0323 /* SSHConnectView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CFC070912C89ACFF004B0323 /* LunaLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunaLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC070942C89ACFF004B0323 /* LunaLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaLinkApp.swift; sourceTree = "<group>"; };
+		CFC070962C89ACFF004B0323 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CFC070982C89AD01004B0323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFC0709B2C89AD01004B0323 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFC070AA2C8A9622004B0323 /* SSHClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHClient.swift; sourceTree = "<group>"; };
+		CFC070AC2C8A963B004B0323 /* UserAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticator.swift; sourceTree = "<group>"; };
+		CFC070AE2C8A9656004B0323 /* ServerAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAuthenticator.swift; sourceTree = "<group>"; };
+		CFC070B02C8A9672004B0323 /* SSHClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHClientError.swift; sourceTree = "<group>"; };
+		CFC070B22C8A9684004B0323 /* PasswordPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPrompt.swift; sourceTree = "<group>"; };
+		CFC070B42C8A968F004B0323 /* HostKeyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostKeyValidator.swift; sourceTree = "<group>"; };
+		CFC070B62C8A9AE2004B0323 /* SSHClientWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHClientWrapper.swift; sourceTree = "<group>"; };
+		CFC070B82C8A9AF5004B0323 /* SSHConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConnectView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFC0708E2C89ACFF004B0323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC070A52C89ADE5004B0323 /* NIOSSH in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFC070882C89ACFF004B0323 = {
+			isa = PBXGroup;
+			children = (
+				CFC070932C89ACFF004B0323 /* LunaLink */,
+				CFC070922C89ACFF004B0323 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFC070922C89ACFF004B0323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC070912C89ACFF004B0323 /* LunaLink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFC070932C89ACFF004B0323 /* LunaLink */ = {
+			isa = PBXGroup;
+			children = (
+				CFC070A22C89AD2F004B0323 /* Source */,
+				CFC070982C89AD01004B0323 /* Assets.xcassets */,
+				CFC0709A2C89AD01004B0323 /* Preview Content */,
+			);
+			path = LunaLink;
+			sourceTree = "<group>";
+		};
+		CFC0709A2C89AD01004B0323 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0709B2C89AD01004B0323 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFC070A22C89AD2F004B0323 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CFC070942C89ACFF004B0323 /* LunaLinkApp.swift */,
+				CFC070A92C8A9612004B0323 /* SSH */,
+				CFC070962C89ACFF004B0323 /* ContentView.swift */,
+				CFC070B62C8A9AE2004B0323 /* SSHClientWrapper.swift */,
+				CFC070B82C8A9AF5004B0323 /* SSHConnectView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CFC070A92C8A9612004B0323 /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				CFC070B42C8A968F004B0323 /* HostKeyValidator.swift */,
+				CFC070B22C8A9684004B0323 /* PasswordPrompt.swift */,
+				CFC070AE2C8A9656004B0323 /* ServerAuthenticator.swift */,
+				CFC070AA2C8A9622004B0323 /* SSHClient.swift */,
+				CFC070B02C8A9672004B0323 /* SSHClientError.swift */,
+				CFC070AC2C8A963B004B0323 /* UserAuthenticator.swift */,
+			);
+			path = SSH;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFC070902C89ACFF004B0323 /* LunaLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC0709F2C89AD01004B0323 /* Build configuration list for PBXNativeTarget "LunaLink" */;
+			buildPhases = (
+				CFC0708D2C89ACFF004B0323 /* Sources */,
+				CFC0708E2C89ACFF004B0323 /* Frameworks */,
+				CFC0708F2C89ACFF004B0323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LunaLink;
+			packageProductDependencies = (
+				CFC070A42C89ADE5004B0323 /* NIOSSH */,
+			);
+			productName = LunaLink;
+			productReference = CFC070912C89ACFF004B0323 /* LunaLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFC070892C89ACFF004B0323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CFC070902C89ACFF004B0323 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = CFC0708C2C89ACFF004B0323 /* Build configuration list for PBXProject "LunaLink" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFC070882C89ACFF004B0323;
+			packageReferences = (
+				CFC070A32C89ADE5004B0323 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */,
+			);
+			productRefGroup = CFC070922C89ACFF004B0323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC070902C89ACFF004B0323 /* LunaLink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFC0708F2C89ACFF004B0323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC0709C2C89AD01004B0323 /* Preview Assets.xcassets in Resources */,
+				CFC070992C89AD01004B0323 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFC0708D2C89ACFF004B0323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC070AD2C8A963B004B0323 /* UserAuthenticator.swift in Sources */,
+				CFC070AF2C8A9656004B0323 /* ServerAuthenticator.swift in Sources */,
+				CFC070B12C8A9672004B0323 /* SSHClientError.swift in Sources */,
+				CFC070B72C8A9AE2004B0323 /* SSHClientWrapper.swift in Sources */,
+				CFC070B92C8A9AF5004B0323 /* SSHConnectView.swift in Sources */,
+				CFC070972C89ACFF004B0323 /* ContentView.swift in Sources */,
+				CFC070AB2C8A9622004B0323 /* SSHClient.swift in Sources */,
+				CFC070952C89ACFF004B0323 /* LunaLinkApp.swift in Sources */,
+				CFC070B52C8A968F004B0323 /* HostKeyValidator.swift in Sources */,
+				CFC070B32C8A9684004B0323 /* PasswordPrompt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CFC0709D2C89AD01004B0323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFC0709E2C89AD01004B0323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFC070A02C89AD01004B0323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LunaLink/Preview Content\"";
+				DEVELOPMENT_TEAM = M46ZF3BCX7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leochen.com.LunaLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFC070A12C89AD01004B0323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LunaLink/Preview Content\"";
+				DEVELOPMENT_TEAM = M46ZF3BCX7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leochen.com.LunaLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFC0708C2C89ACFF004B0323 /* Build configuration list for PBXProject "LunaLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC0709D2C89AD01004B0323 /* Debug */,
+				CFC0709E2C89AD01004B0323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC0709F2C89AD01004B0323 /* Build configuration list for PBXNativeTarget "LunaLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC070A02C89AD01004B0323 /* Debug */,
+				CFC070A12C89AD01004B0323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFC070A32C89ADE5004B0323 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apple/swift-nio-ssh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFC070A42C89ADE5004B0323 /* NIOSSH */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFC070A32C89ADE5004B0323 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */;
+			productName = NIOSSH;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CFC070892C89ACFF004B0323 /* Project object */;
+}
